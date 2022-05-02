@@ -62,9 +62,11 @@ class FilteredTodosCubit extends Cubit<FilteredTodosState> {
 
     if (todoSearchCubit.state.searchTerm.isNotEmpty) {
       _filteredTodos = _filteredTodos
-          .where((Todo todo) => todo.desc
-              .toLowerCase()
-              .contains(todoSearchCubit.state.searchTerm))
+          .where(
+            (Todo todo) => todo.desc
+                .toLowerCase()
+                .contains(todoSearchCubit.state.searchTerm),
+          )
           .toList();
     }
 
