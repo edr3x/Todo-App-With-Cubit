@@ -43,7 +43,11 @@ class SearchAndFilterTodo extends StatelessWidget {
         context.read<TodoFilterCubit>().changeFilter(filter);
       },
       child: Text(
-        filter == Filter.all ? 'All' : 'Completed',
+        filter == Filter.all
+            ? 'All'
+            : filter == Filter.active
+                ? 'Active'
+                : 'Completed',
         style: TextStyle(
           fontSize: 18.0,
           color: textColor(context, filter),
