@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_cubit/cubits/active_todo_counter/active_todo_counter_cubit.dart';
 import 'package:todo_cubit/pages/todo_page/create_todo.dart';
 import 'package:todo_cubit/pages/todo_page/search_and_filter_todo.dart';
+import 'package:todo_cubit/pages/todo_page/show_todos.dart';
 import 'package:todo_cubit/pages/todo_page/todo_header.dart';
 
 class TodoPage extends StatelessWidget {
@@ -23,6 +24,7 @@ class TodoPage extends StatelessWidget {
                   CreateTodo(),
                   SizedBox(height: 10.0),
                   SearchAndFilterTodo(),
+                  ShowTodos(),
                 ],
               ),
             ),
