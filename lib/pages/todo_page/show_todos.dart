@@ -127,7 +127,7 @@ class _TodoItemState extends State<TodoItem> {
                           Navigator.pop(context);
                         }
                       }),
-                      child: const Text("Edit"),
+                      child: const Text("Edits"),
                     ),
                   ],
                 );
