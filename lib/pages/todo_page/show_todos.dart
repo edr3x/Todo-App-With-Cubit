@@ -31,7 +31,7 @@ class ShowTodos extends StatelessWidget {
             context: context,
             barrierDismissible: false,
             builder: (context) => AlertDialog(
-              title: const Text("Are you sure?"),
+              title: const Text("Are you suree?"),
               content: const Text("Do you really want to delete?"),
               actions: [
                 TextButton(
@@ -127,7 +127,7 @@ class _TodoItemState extends State<TodoItem> {
                           Navigator.pop(context);
                         }
                       }),
-                      child: const Text("Edits"),
+                      child: const Text("Edit"),
                     ),
                   ],
                 );
