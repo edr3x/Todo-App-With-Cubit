@@ -19,12 +19,12 @@ class TodoPage extends StatelessWidget {
                 const EdgeInsets.symmetric(horizontal: 20.0, vertical: 40.0),
             child: Center(
               child: Column(
-                children: const [
-                  TodoHeader(),
-                  CreateTodo(),
-                  SizedBox(height: 10.0),
+                children: [
+                  const TodoHeader(),
+                  const CreateTodo(),
+                  const SizedBox(height: 10.0),
                   SearchAndFilterTodo(),
-                  ShowTodos(),
+                  const ShowTodos(),
                 ],
               ),
             ),
